@@ -1,0 +1,36 @@
+.section-introducao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    gap: 0px 40px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+
+    
+}
+
+.botao{
+    background: linear-gradient(#ffbf00, #f2a50c);
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}
+
+.introducao{
+    display: grid;
+    place-items: start;
+}
+
+.introducao h1 {
+    font-size: 3rem;
+}
+.introducao p {
+    font-size: 1.125rem;
+}
