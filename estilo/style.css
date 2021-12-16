@@ -1,8 +1,102 @@
-@import './header.css';
 
-@import './global.css';
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-@import './introducao.css';
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.header-bg{
+    background-color: #000000;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /*esse gap foi pensando no responsivo, melhora a visualizacao do menu e deixa o conteudo mais afastado da marca bikcraft*/
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /*as margens auto foram para o conteudo sempre respeitar e nunca extrapolar o container estabelecido*/
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a{
+    color: #ffffff;
+    padding: 16px 0px; 
+    /* usei apenas para aumentar a area de contato dos botoes do menu*/
+    display: inline-block;
+    /* visando o responsivo, quando os conteudos ficarem um em baixo do outro respeitarem o paddind e n ficarem um por cima do outro*/
+    font-size: 18px;
+    position: relative;
+}
+
+.header-menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after{
+    width: 100%;
+}
+
+
+@media (max-width: 800px){
+
+    .header-menu{
+        gap: 20px;
+    }
+    .header-menu a{
+        background: #111111;
+        padding: 12px 16px;
+        border-radius: 4px;
+
+    }
+
+    .header-menu a:hover{
+        background-color: #2e2e2e;
+    }
+
+    .header a:after{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+
+
+    .header-menu{
+        gap: 12px;
+    }
+
+    .header-menu a{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
 
 
 
