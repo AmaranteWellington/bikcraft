@@ -32,10 +32,9 @@
     /* usei apenas para aumentar a area de contato dos botoes do menu*/
     display: inline-block;
     /* visando o responsivo, quando os conteudos ficarem um em baixo do outro respeitarem o paddind e n ficarem um por cima do outro*/
-    font-size: 18px;
+
     position: relative;
-    font-family: 'poppins';
-    font-weight: 400;
+    
 }
 
 .header-menu a::after{
