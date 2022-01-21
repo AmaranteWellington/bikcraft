@@ -9,12 +9,8 @@
     /*esse gap foi pensando no responsivo, melhora a visualizacao do menu e deixa o conteudo mais afastado da marca bikcraft*/
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    padding-top: 20px;
+    padding-left: 20px;
 
     
     /*as margens auto foram para o conteudo sempre respeitar e nunca extrapolar o container estabelecido*/
